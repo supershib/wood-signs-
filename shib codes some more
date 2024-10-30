@@ -1,0 +1,13 @@
+charge = 0.00
+num_chars = 8
+color = "gold"
+wood_type = "oak"
+charge = 35.00
+if num_chars > 5:
+    additional_chars = num_chars
+    charge += additional_chars
+    if wood_type == "oak":
+        charge += 20.00
+        if color == "gold":
+            charge += 15.00
+            print(f"the charge for this sign is ${charge}. ")
